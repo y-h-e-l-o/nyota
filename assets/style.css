@@ -2,10 +2,23 @@
     font-family: sans-serif;
 }
 body{
-    background-color: #fffaac;
+/*    background-color: #fffaac;
+*/    margin: 0;
 }
 a{
     text-decoration : none;
+}
+em{
+    font-weight: bolder;
+    font-style: normal;
+}
+header{
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 90;
 }
 .logo{
     position: sticky;
@@ -16,6 +29,18 @@ a{
     background-color: #fff000;
     border-radius: 50%;
     z-index: 100;
+}
+.contacts{
+    background: #fff000;
+    width: 300px;
+    margin: auto;
+    left: 40vw;
+    padding: 10px 15px;
+    position: fixed;
+    border-radius: 12px;
+    z-index: 100;
+
+
 }
 .presentation{
     right: 20px;
@@ -47,6 +72,7 @@ dialog{
 ::backdrop {
     backdrop-filter: blur(2.5px);
 }
+
 main{
 position: relative;
 right: 0px;
@@ -58,7 +84,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
-    margin: 0px 10px 0 10px;
+/*    margin: 0px 10px 0 10px;*/
 }
 .block{
     position: relative;
@@ -66,10 +92,15 @@ section{
     /*border: 4px black solid;*/
     padding: 10px;
 }
+
 img{
     width:100%;
     height: auto;
     margin-top: 20px;
+}
+.intro{
+    width: 80%;
+
 }
 .mois{
     position: sticky;
@@ -89,9 +120,74 @@ float: left;    background-color: #fff000;
   touch-action: manipulation;
   z-index: 100;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 700px) {
+   body{
+        overflow-x: hidden;
+    }
 .block{
     width: 80%;
 }
 
+header{
+    z-index: 1000;
+}
+.presentation{
+left: 50px;
+top: 1vh;
+margin-left: 30px;
+position: sticky;
+border-radius:0;
+z-index: 3000;
+}
+dialog{
+    width: 70%;
+    height: 40%;
+}
+.contacts{
+    position: fixed;
+   bottom: 1vh;
+    left: 10vw;
+}
+.logo{    
+            z-index: 1006;
+            left: 10vw;
+            width: 80%;
+            margin: 0;
+            top: -255px;
+/*    margin: auto;
+    margin-top: -10px;
+    width: 110%;
+    top: -250px;*/
+}
+.mois{
+    display: block;
+    width: 100%;
+            z-index: 999;
+    float: none;
+    top: 10vh;
+    border-radius:0;
+}
+main{
+    margin-top: 200px;
+}
+.bandeau{
+    position: sticky;
+        z-index: 1002;
+/*    position: fixed;
+    top: 20vh;
+    width: 100%;
+
+    background-color: white;*/
+}
+.intro{
+    margin: 0;
+    width: 100%;
+    margin: 50px 0 200px 0;
+ /*   border-right: 20px solid yellow;
+    border-left: 20px solid yellow;*/
+    background-color: yellow;
+}
+.align-center{
+    text-align: center;
+}
 }
